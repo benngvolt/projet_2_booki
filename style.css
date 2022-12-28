@@ -1,0 +1,92 @@
+body {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: raleway, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom : 63px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 44px 17px 0px 17px;
+}
+
+nav a:hover {
+    color: #0065fc;
+    border-top: solid 2px #0065fc;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+form {
+    width: 400px;
+    height: 49px;
+    border: solid 1px #F2F2F2;
+    border-radius: 15px 15px 15px 15px;
+    height: 49px;
+}
+
+.flex-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.logo {
+    width: 61.09px;
+    height: 19px;
+}
+
+.location-text{
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+}
+
+.location-icon-background{
+    width: 50px;
+    height: 49px;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #F2F2F2;
+    background-size: cover;
+}
+
+.location-button {
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    color: white;
+    background-color: #0065fc;
+    border-radius: 0px 15px 15px 0px;
+    border: none;
+}
