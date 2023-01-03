@@ -10,50 +10,238 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <img src="images/logo/Booki.png" class="logo">
-            <nav>
-                <a href=""> Hébergement </a>
-                <a href=""> Activité </a>
-            </nav>
-        </header>
-        <main>
-            <h1> Trouvez votre hébergement pour des vacances de rêve </h1>
-            <p> En plein centre-ville ou en pleine nature </p>
-            <form class="flex-start">
-                <label for="mainlocation" class="location-icon-background">
-                    <i class="fa-sharp fa-solid fa-location-dot location-icon"></i>
-                </label>
-                <input type="search" name="mainlocation" id="mainlocation" value="Marseille" class="location-text">
-                <input type="submit" value="Rechercher" class="location-button">
-            </form>
-            <div class="flex-start">
-                <p> Filtres </p>
-                <ul>
-                    <li> <i class="fa-sharp fa-solid fa-money-bill-wave"></i> Economique </li>
-                    <li> <i class="fa-solid fa-person"></i> Familial </li>
-                    <li> <i class="fa-solid fa-heart"></i> Romantique </li>
-                    <li> <i class="fa-solid fa-dog"></i> Animaux Autorisés </li>
-                </ul>
-            </div>
-            <p><i class="fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville </p>
-            <section>
-                <h1> Hébergement à Marseille </h1>
-                <div>
-                    <div>
-                        <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-                        <h2> Auberge La Canebière </h2>
-                        <p> Nuit à partir de 25€ </p>
-                        <div>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
+        <div class="wrapper">
+            <header>
+                <a href="#"><img src="images/logo/Booki.png" alt="Logo Booki" class="logo"></a>
+                <nav>
+                    <a href="#hebergements"> Hébergement </a>
+                    <a href="#activites"> Activités </a>
+                </nav>
+            </header>
+            <main>
+                <!--Section contenant le formulaire et les filtres:-->
+                <section>
+                    <h1> Trouvez votre hébergement pour des vacances de rêve </h1>
+                    <p> En plein centre-ville ou en pleine nature </p>
+                    <form>
+                        <label for="mainlocation" class="location-label">
+                            <i class="fa-sharp fa-solid fa-location-dot location-icon"></i>
+                        </label>
+                        <input type="search" name="mainlocation" id="mainlocation" value="Marseille, France" class="location-field">
+                        <input type="submit" value="Rechercher" class="location-button">
+                    </form>
+                    <div class="filters-main">
+                        <p class="filters-title"> Filtres </p>
+                        <ul class="filters-container">
+                            <li class="filters-box"> <i class="fa-sharp fa-solid fa-money-bill-wave blue-icon"></i> Economique </li>
+                            <li class="filters-box"> <i class="fa-solid fa-person blue-icon"></i> Familial </li>
+                            <li class="filters-box"> <i class="fa-solid fa-heart blue-icon"></i> Romantique </li>
+                            <li class="filters-box"> <i class="fa-solid fa-dog blue-icon"></i> Animaux Autorisés </li>
+                        </ul>
                     </div>
-                </div>
-            </section>
-        </main>
+                    <p><i class="fa-solid fa-info blue-icon filters-icon-border"></i> Plus de 500 logements sont disponibles dans cette ville </p>
+                </section>
+                <!--Section globale hébergements + les plus populaires (flexbox)-->
+                <section id="hebergements" class="section-hebergements">
+                    <article class="hebergements-main">
+                        <h2 class="hebergements-title"> Hébergement à Marseille </h2>
+                        <!--Grille des cartes "hébergements"-->
+                        <div class="hebergements-container">
+                            <!--Première carte "Auberge la Canebière":-->
+                            <a href="#" class="heb-card-main">
+                                <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Canebiere" class="heb-card-image">
+                                <ul class="heb-card-list">
+                                    <li><h3> Auberge La Canebière </h3></li>
+                                    <li> Nuit à partir de 25€ </li>
+                                    <li class="stars">
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star grey-icon"></i>
+                                    </li>
+                                </ul>
+                            </a>
+                            <!--Deuxième carte "Hotel du Port":-->
+                            <a href="#" class="heb-card-main">
+                                <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du Port" class="heb-card-image">
+                                <ul class="heb-card-list">
+                                    <li><h3> Hôtel du Port </h3></li>
+                                    <li> Nuit à partir de 52€ </li>
+                                    <li class="stars">
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star grey-icon"></i>
+                                    </li>
+                                </ul>
+                            </a>
+                            <!--Troisième carte "Hotel les Mouettes":-->
+                            <a href="#" class="heb-card-main">
+                                <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hotel les mouettes" class="heb-card-image">
+                                <ul class="heb-card-list">
+                                    <li><h3> Hôtel Les mouettes </h3></li>
+                                    <li> Nuit à partir de 76€ </li>
+                                    <li class="stars">
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star grey-icon"></i>
+                                    </li>
+                                </ul>
+                            </a>
+                            <!--Quatrième carte "Hotel de la mer":-->
+                            <a href="#" class="heb-card-main">
+                                <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hotel de la mer" class="heb-card-image">
+                                <ul class="heb-card-list">
+                                    <li><h3> Hôtel de la mer </h3></li>
+                                    <li> Nuit à partir de 46€ </li>
+                                    <li class="stars">
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star grey-icon"></i>
+                                    </li>
+                                </ul>
+                            </a>
+                            <!--Cinquième carte "Auberge Le Panier":-->
+                            <a href="#" class="heb-card-main">
+                                <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le Panier" class="heb-card-image">
+                                <ul class="heb-card-list">
+                                    <li><h3> Auberge Le Panier </h3></li>
+                                    <li> Nuit à partir de 23€ </li>
+                                    <li class="stars">
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star grey-icon"></i>
+                                    </li>
+                                </ul>
+                            </a>
+                            <!--Sixième carte "Hotel chez Amina":-->
+                            <a href="#" class="heb-card-main">
+                                <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hotel chez Amina" class="heb-card-image">
+                                <ul class="heb-card-list">
+                                    <li><h3> Hôtel Chez Amina </h3></li>
+                                    <li> Nuit à partir de 96€ </li>
+                                    <li class="stars">
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star grey-icon"></i>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                        <a href="#"><p class="afficher-text">Afficher plus</p></a>
+                    </article>
+                    <article class="populaires-main">
+                        <div class="populaires-title-flexbox">
+                            <h2 class="populaires-title"> Les plus populaires </h2>
+                            <i class="fa-solid fa-chart-line pop-icon"></i>
+                        </div>
+                        <!--Grille des cartes "populaires"-->
+                        <div class="populaires-flexbox">
+                            <!--Première carte "Hotel le Soleil du Matin":-->
+                            <a href="#" class="pop-card-main">
+                                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Le Soleil du Matin" class="pop-card-image">
+                                <ul class="pop-card-list">
+                                    <li><h3> Hotel Le Soleil du Matin </h3></li>
+                                    <li> Nuit à partir de 128€ </li>
+                                    <li class="pop-stars">
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star grey-icon"></i>
+                                    </li>
+                                </ul>
+                            </a>
+                            <!--Deuxième carte "Chambre d'Hôtes Au Coeur de l'Eau":-->
+                            <a href="#" class="pop-card-main">
+                                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au Coeur de l'Eau" class="pop-card-image">
+                                <ul class="pop-card-list">
+                                    <li><h3> Chambres d'hôtes Au Coeur de l'Eau </h3></li>
+                                    <li> Nuit à partir de 71€ </li>
+                                    <li class="pop-stars">
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star grey-icon"></i>
+                                    </li>
+                                </ul>
+                            </a>
+                            <!--Troisième carte "Hotel Bleu et Blanc":-->
+                            <a href="#" class="pop-card-main">
+                                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hotel Bleu et Blanc" class="pop-card-image">
+                                <ul class="pop-card-list">
+                                    <li><h3> Hôtel Bleu et Blanc </h3></li>
+                                    <li> Nuit à partir de 68€ </li>
+                                    <li class="pop-stars">
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star blue-icon"></i>
+                                        <i class="fa-solid fa-star grey-icon"></i>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </article>
+                </section>
+                <section id="activites" class="activites-main">
+                    <h2> Activités à Marseille </h2>
+                    <!--Conteneur des cartes "activités"-->
+                    <div class="activites-container">
+                        <!--Première carte "Vieux Port":-->
+                        <a href="#" class="act-card-main">
+                            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" class="act-card-image">
+                            <h3 class="act-card-title"> Vieux-port </h3>
+                        </a>
+                        <!--Deuxième carte "Fort de Pomègues":-->
+                        <a href="#" class="act-card-main">
+                            <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" class="act-card-image">
+                            <h3 class="act-card-title"> Fort de Pomègues </h3>
+                        </a>
+                        <!--Troisième carte "Parc National Calanques":-->
+                        <a href="#" class="act-card-main">
+                            <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques" class="act-card-image">
+                            <h3 class="act-card-title"> Parc National des Calanques </h3>
+                        </a>
+                        <!--Quatrième carte " N D De la Garde":-->
+                        <a href="#" class="act-card-main">
+                            <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" class="act-card-image">
+                            <h3 class="act-card-title"> Notre-Dame de la Garde </h3>
+                        </a>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <nav>
+                    <ul class="footer-list">
+                        <li class="footer-text"><h3>A propos</h3></li>
+                        <li class="footer-text">Fonctionnement du site</li>
+                        <li class="footer-text">Conditions générales</li>
+                        <li class="footer-text">Données et confidentialité</li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li class="footer-text"><h3>Nos hébergements</h3></li>
+                        <li class="footer-text">Charte qualité</li>
+                        <li class="footer-text">Proposer votre hôtel</li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li class="footer-text"><h3>Assistance</h3></li>
+                        <li class="footer-text">Centre d'aide</li>
+                        <li class="footer-text">Nous contacter</li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
     </body>
 </html>

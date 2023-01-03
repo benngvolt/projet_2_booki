@@ -1,8 +1,40 @@
-body {
-    margin-left: 50px;
-    margin-right: 50px;
+/* BODY -------------------------------------------------------------- */
+.wrapper {
+    max-width: 1400px;
+    margin: 0 3% 0 3%;
     font-family: raleway, sans-serif;
+    font-size: 100%;
 }
+
+/* GLOBALES -------------------------------------------------------------- */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+h1, h2 {
+    font-weight: 700;
+    font-size: 22px;
+    padding: 2% 0 0 0 ;
+}
+h3 {
+    font-weight: 700;
+    font-size: 15px;
+    margin: 5% 0 0 0;
+}
+p {
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 4px;
+}
+.blue-icon {
+    color:#0065fc;
+}
+.grey-icon {
+    color:#F2F2F2;
+}
+
+/* HEADER -------------------------------------------------------------- */
 
 header {
     display: flex;
@@ -11,82 +43,357 @@ header {
     align-items: flex-end;
     margin-bottom : 63px;
 }
-
-nav {
+.logo {
+    width: 61px;
+    height: 19px;
+}
+header nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
 nav a {
-    text-decoration: none;
-    color: black;
     font-weight: 400;
     font-size: 16px;
     padding: 44px 17px 0px 17px;
 }
-
 nav a:hover {
     color: #0065fc;
     border-top: solid 2px #0065fc;
 }
 
-ul {
-    list-style-type: none;
+/* FOOTER -------------------------------------------------------------- */
+
+footer {
+    background-color: #F2F2F2;
+    height: 225px;
+    margin-top: 5%;
+}
+footer nav {
+    height: 100%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 5%;
+}
+.footer-list {
+    margin-bottom: 12px;
+    list-style-type: none;
+}
+.footer-text {
+    margin-bottom: 12px;
+    list-style-type: none;
 }
 
-h1 {
-    font-weight: 700;
-    font-size: 22px;
-}
-
-p {
-    font-weight: 400;
-    font-size: 16px;
-}
+/* FORMULAIRE -------------------------------------------------------------- */
 
 form {
     width: 400px;
     height: 49px;
-    border: solid 1px #F2F2F2;
-    border-radius: 15px 15px 15px 15px;
-    height: 49px;
-}
-
-.flex-start {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    border: solid 1px #F2F2F2;
+    border-radius: 15px 15px 15px 15px;
+    height: 49px;
+    margin-top: 20px;
+    margin-bottom: 32px;
 }
-
-.logo {
-    width: 61.09px;
-    height: 19px;
-}
-
-.location-text{
+.location-field{
+    width: 58%;
+    padding-left: 10px;
     font-size: 18px;
     font-weight: 700;
     border: none;
 }
-
-.location-icon-background{
-    width: 50px;
-    height: 49px;
+.location-label{
+    width: 12%;
+    display: block;
     border-radius: 15px 0px 0px 15px;
     background-color: #F2F2F2;
     background-size: cover;
 }
-
 .location-button {
+    width: 30%; 
     font-size: 18px;
     font-weight: 700;
+    text-align: center;
     border: none;
     color: white;
     background-color: #0065fc;
     border-radius: 0px 15px 15px 0px;
     border: none;
+}
+.location-icon {
+    margin: 32% 0 0 32%;
+    font-size: 1.2em;
+}
+
+/* FILTRES -------------------------------------------------------------- */
+
+.filters-main {
+    display: flex;
+    flex-direction: row;
+}
+.filters-container {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 700;
+    width: 808px;
+    height: 50px;
+}
+.filters-title {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 20px 0px 0px;
+    text-align: start;
+    margin-top: 17px;
+}
+.filters-box {
+    padding: 12px 18px 0px 18px;
+    border: solid 2px #D9D9D9;
+    border-radius: 25px;
+    text-align: center;
+}
+.filters-box:hover {
+    background-color: #DEEBFF;
+    background-size: cover;
+}
+.filters-icon-border {
+    padding: 4px 8px 5px 8px;
+    margin-right: 5px;
+    border: solid 1px #D9D9D9;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+/* ------------------------SECTION HEBERGEMENTS ET POPULAIRES-------------------------------------------------------------- */
+
+.section-hebergements {
+    width: 100%;
+    aspect-ratio: 2/1;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+.stars {
+    margin: 0.3rem 0 0.3rem 0;
+    font-size: 0.8em;
+}
+
+/* SECTION HEBERGEMENTS---------------------*/
+
+.hebergements-main {
+    width: 70%;
+    height: 100%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 0 3% 0 3%;
+    margin-right: 1.5%;
+}
+.hebergements-title {
+    margin: 2% 0 0 0;
+}
+.hebergements-container {
+    width: 100%;
+    height: 73%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40% 40%;
+    grid-gap: 5%;
+    margin-top: 7%;
+}
+.heb-card-main {
+    width: 100%;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 4px 4px 25px rgba(0,0,0,0.2);
+}
+.heb-card-image {
+    object-fit: cover;
+    width: 100%;
+    height: 60%;
+    border-radius: 20px 20px 0px 0px;
+    box-sizing: border-box;
+    border: 0.3rem solid white;
+    border-bottom: 0rem;
+    margin: 0rem auto;
+}
+.heb-card-list {
+    height: 40%;
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 1rem;
+    padding-right: 0.4rem;
+    margin-top: 0rem;
+}
+.afficher-text {
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* SECTION POPULAIRES---------------------*/
+
+.populaires-main {
+    width: 30%;
+    height: 100%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 0 3% 0 3%;
+    margin-left: 1.5%;
+}
+.populaires-flexbox {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 9%;
+    margin-bottom: 9%;
+}
+.populaires-title-flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.populaires-title {
+    margin: 2% 0 0 0;
+}
+.pop-icon {
+    color:#0065fc;
+    font-size: 1.2em;
+    text-align: end;
+    padding-top: 6.5%;
+}
+.pop-card-main {
+    width: 100%;
+    height: 27%;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 4px 4px 25px rgba(0,0,0,0.2);
+}
+.pop-card-image {
+    width: 37%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+    box-sizing: border-box;
+    border: 0.3rem solid white;
+    border-right: 0rem;
+    margin: 0rem auto;
+}
+.pop-card-list {
+    width: 63%;
+    height: 100%;
+    align-items: stretch;
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 1rem;
+    padding-right: 0.4rem;
+    margin-top: 0rem;
+}
+.pop-stars {
+    margin: 0.3rem 0 0.3rem 0;
+    padding-top: 20%;
+    font-size: 0.8em;
+}
+
+/* SECTION ACTIVITES---------------------*/
+
+.activites-main {
+    margin-top: 5%;
+}
+.activites-container {
+    width: 100%;
+    aspect-ratio: 2.7/1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.act-card-main {
+    width: 22.5%;
+    height: 100%;
+    display: block;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 0px 25px rgba(0,0,0,0.1);
+}
+.act-card-image {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    box-sizing: border-box;
+    margin: 0rem auto;
+}
+.act-card-title {
+    padding-left: 5%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    
+    .wrapper {
+        max-width: 992px;
+        min-width: 768px;
+        margin: 0 3% 0 3%;
+    }
+    .section-hebergements {
+        width: 100%;
+        aspect-ratio: 1/1.3;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+    }
+    .hebergements-main {
+        width: 100%;
+        height: 70%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 1.5%;
+    }
+    .populaires-main {
+        width: 100%;
+        height: 30%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 1.5%;
+    }
+    .populaires-flexbox {
+        width: 100%;
+        height: 37%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 6%;
+        margin-bottom: 6%;
+    }
+    .pop-card-main {
+        height: 100%;
+        width: 30%;
+    }
+    .activites-container {
+        width: 100%;
+        aspect-ratio: 3/1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
 }
