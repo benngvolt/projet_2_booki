@@ -7,23 +7,23 @@
         <script src="https://kit.fontawesome.com/d34b6ac5c7.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="wrapper">
             <header>
                 <a href="#"><img src="images/logo/Booki.png" alt="Logo Booki" class="logo"></a>
                 <nav>
-                    <a href="#hebergements"> Hébergement </a>
-                    <a href="#activites"> Activités </a>
+                    <a href="#hebergements" class="nav-accommodation"> Hébergement </a>
+                    <a href="#activites" class="nav-activities" > Activités </a>
                 </nav>
             </header>
             <main>
                 <!--Section contenant le formulaire et les filtres:-->
                 <section>
                     <h1> Trouvez votre hébergement pour des vacances de rêve </h1>
-                    <p> En plein centre-ville ou en pleine nature </p>
-                    <form>
+                    <p class="subtitle"> En plein centre-ville ou en pleine nature </p>
+                    <form method="get" action="">
                         <label for="mainlocation" class="location-label">
                             <i class="fa-sharp fa-solid fa-location-dot location-icon"></i>
                         </label>
@@ -33,13 +33,13 @@
                     <div class="filters-main">
                         <p class="filters-title"> Filtres </p>
                         <ul class="filters-container">
-                            <li class="filters-box"> <i class="fa-sharp fa-solid fa-money-bill-wave blue-icon"></i> Economique </li>
-                            <li class="filters-box"> <i class="fa-solid fa-person blue-icon"></i> Familial </li>
-                            <li class="filters-box"> <i class="fa-solid fa-heart blue-icon"></i> Romantique </li>
-                            <li class="filters-box"> <i class="fa-solid fa-dog blue-icon"></i> Animaux Autorisés </li>
+                            <li class="filters-box"> <a href="#"><i class="fa-sharp fa-solid fa-money-bill-wave blue-icon filters-icon"></i> Economique </a></li>
+                            <li class="filters-box"> <a href="#"><i class="fa-solid fa-person blue-icon filters-icon"></i> Familial </a></li>
+                            <li class="filters-box"> <a href="#"><i class="fa-solid fa-heart blue-icon filters-icon"></i> Romantique </a></li>
+                            <li class="filters-box"> <a href="#"><i class="fa-solid fa-dog blue-icon filters-icon"></i> Animaux autorisés </a></li>
                         </ul>
                     </div>
-                    <p><i class="fa-solid fa-info blue-icon filters-icon-border"></i> Plus de 500 logements sont disponibles dans cette ville </p>
+                    <p class="filters-info"><i class="fa-solid fa-info blue-icon filters-icon-border"></i> Plus de 500 logements sont disponibles dans cette ville </p>
                 </section>
                 <!--Section globale hébergements + les plus populaires (flexbox)-->
                 <section id="hebergements" class="section-hebergements">
@@ -146,14 +146,14 @@
                             <i class="fa-solid fa-chart-line pop-icon"></i>
                         </div>
                         <!--Grille des cartes "populaires"-->
-                        <div class="populaires-flexbox">
+                        <div class="populaires-container">
                             <!--Première carte "Hotel le Soleil du Matin":-->
                             <a href="#" class="pop-card-main">
                                 <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Le Soleil du Matin" class="pop-card-image">
                                 <ul class="pop-card-list">
                                     <li><h3> Hotel Le Soleil du Matin </h3></li>
                                     <li> Nuit à partir de 128€ </li>
-                                    <li class="pop-stars">
+                                    <li class="stars">
                                         <i class="fa-solid fa-star blue-icon"></i>
                                         <i class="fa-solid fa-star blue-icon"></i>
                                         <i class="fa-solid fa-star blue-icon"></i>
@@ -168,7 +168,7 @@
                                 <ul class="pop-card-list">
                                     <li><h3> Chambres d'hôtes Au Coeur de l'Eau </h3></li>
                                     <li> Nuit à partir de 71€ </li>
-                                    <li class="pop-stars">
+                                    <li class="stars">
                                         <i class="fa-solid fa-star blue-icon"></i>
                                         <i class="fa-solid fa-star blue-icon"></i>
                                         <i class="fa-solid fa-star blue-icon"></i>
@@ -179,11 +179,11 @@
                             </a>
                             <!--Troisième carte "Hotel Bleu et Blanc":-->
                             <a href="#" class="pop-card-main">
-                                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hotel Bleu et Blanc" class="pop-card-image">
+                                <img src="images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hotel Bleu et Blanc" class="pop-card-image">
                                 <ul class="pop-card-list">
                                     <li><h3> Hôtel Bleu et Blanc </h3></li>
                                     <li> Nuit à partir de 68€ </li>
-                                    <li class="pop-stars">
+                                    <li class="stars">
                                         <i class="fa-solid fa-star blue-icon"></i>
                                         <i class="fa-solid fa-star blue-icon"></i>
                                         <i class="fa-solid fa-star blue-icon"></i>
@@ -202,22 +202,22 @@
                         <!--Première carte "Vieux Port":-->
                         <a href="#" class="act-card-main">
                             <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" class="act-card-image">
-                            <h3 class="act-card-title"> Vieux-port </h3>
+                            <div class="text-box"><h3 class="act-card-title"> Vieux-port </h3></div>
                         </a>
                         <!--Deuxième carte "Fort de Pomègues":-->
                         <a href="#" class="act-card-main">
                             <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" class="act-card-image">
-                            <h3 class="act-card-title"> Fort de Pomègues </h3>
+                            <div class="text-box"><h3 class="act-card-title"> Fort de Pomègues </h3></div>
                         </a>
                         <!--Troisième carte "Parc National Calanques":-->
                         <a href="#" class="act-card-main">
                             <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques" class="act-card-image">
-                            <h3 class="act-card-title"> Parc National des Calanques </h3>
+                            <div class="text-box"><h3 class="act-card-title"> Parc National des Calanques </h3></div>
                         </a>
                         <!--Quatrième carte " N D De la Garde":-->
                         <a href="#" class="act-card-main">
                             <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" class="act-card-image">
-                            <h3 class="act-card-title"> Notre-Dame de la Garde </h3>
+                            <div class="text-box"><h3 class="act-card-title"> Notre-Dame de la Garde </h3></div>
                         </a>
                     </div>
                 </section>
@@ -225,20 +225,20 @@
             <footer>
                 <nav>
                     <ul class="footer-list">
-                        <li class="footer-text"><h3>A propos</h3></li>
-                        <li class="footer-text">Fonctionnement du site</li>
-                        <li class="footer-text">Conditions générales</li>
-                        <li class="footer-text">Données et confidentialité</li>
+                        <li class="footer-title"><h3>A propos</h3></li>
+                        <li>Fonctionnement du site</li>
+                        <li>Conditions générales</li>
+                        <li>Données et confidentialité</li>
                     </ul>
                     <ul class="footer-list">
-                        <li class="footer-text"><h3>Nos hébergements</h3></li>
-                        <li class="footer-text">Charte qualité</li>
-                        <li class="footer-text">Proposer votre hôtel</li>
+                        <li class="footer-title"><h3>Nos hébergements</h3></li>
+                        <li>Charte qualité</li>
+                        <li>Proposer votre hôtel</li>
                     </ul>
                     <ul class="footer-list">
-                        <li class="footer-text"><h3>Assistance</h3></li>
-                        <li class="footer-text">Centre d'aide</li>
-                        <li class="footer-text">Nous contacter</li>
+                        <li class="footer-title"><h3>Assistance</h3></li>
+                        <li>Centre d'aide</li>
+                        <li>Nous contacter</li>
                     </ul>
                 </nav>
             </footer>
