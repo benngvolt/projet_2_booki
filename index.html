@@ -14,7 +14,7 @@
             <header>
                 <a href="#"><img src="images/logo/Booki.png" alt="Logo Booki" class="logo"></a>
                 <nav>
-                    <a href="#hebergements" class="nav-accommodation"> Hébergement </a>
+                    <a href="#hebergements" class="nav-accommodation"> Hébergements </a>
                     <a href="#activites" class="nav-activities" > Activités </a>
                 </nav>
             </header>
@@ -28,7 +28,8 @@
                             <i class="fa-sharp fa-solid fa-location-dot location-icon"></i>
                         </label>
                         <input type="search" name="mainlocation" id="mainlocation" value="Marseille, France" class="location-field">
-                        <input type="submit" value="Rechercher" class="location-button">
+                        <input type="submit" value="Rechercher" class="location-text-button">
+                        <input type="submit" value="&#xf002" class="fa-solid fa-magnifying-glass location-icon-button">
                     </form>
                     <div class="filters-main">
                         <p class="filters-title"> Filtres </p>
@@ -46,98 +47,112 @@
                     <article class="hebergements-main">
                         <h2 class="hebergements-title"> Hébergement à Marseille </h2>
                         <!--Grille des cartes "hébergements"-->
-                        <div class="hebergements-container">
+                        <div>
+                            <ul class="hebergements-container">
                             <!--Première carte "Auberge la Canebière":-->
-                            <a href="#" class="heb-card-main">
-                                <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Canebiere" class="heb-card-image">
-                                <ul class="heb-card-list">
-                                    <li><h3> Auberge La Canebière </h3></li>
-                                    <li> Nuit à partir de 25€ </li>
-                                    <li class="stars">
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star grey-icon"></i>
-                                    </li>
-                                </ul>
-                            </a>
-                            <!--Deuxième carte "Hotel du Port":-->
-                            <a href="#" class="heb-card-main">
-                                <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du Port" class="heb-card-image">
-                                <ul class="heb-card-list">
-                                    <li><h3> Hôtel du Port </h3></li>
-                                    <li> Nuit à partir de 52€ </li>
-                                    <li class="stars">
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star grey-icon"></i>
-                                    </li>
-                                </ul>
-                            </a>
-                            <!--Troisième carte "Hotel les Mouettes":-->
-                            <a href="#" class="heb-card-main">
-                                <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hotel les mouettes" class="heb-card-image">
-                                <ul class="heb-card-list">
-                                    <li><h3> Hôtel Les mouettes </h3></li>
-                                    <li> Nuit à partir de 76€ </li>
-                                    <li class="stars">
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star grey-icon"></i>
-                                    </li>
-                                </ul>
-                            </a>
-                            <!--Quatrième carte "Hotel de la mer":-->
-                            <a href="#" class="heb-card-main">
-                                <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hotel de la mer" class="heb-card-image">
-                                <ul class="heb-card-list">
-                                    <li><h3> Hôtel de la mer </h3></li>
-                                    <li> Nuit à partir de 46€ </li>
-                                    <li class="stars">
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star grey-icon"></i>
-                                    </li>
-                                </ul>
-                            </a>
-                            <!--Cinquième carte "Auberge Le Panier":-->
-                            <a href="#" class="heb-card-main">
-                                <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le Panier" class="heb-card-image">
-                                <ul class="heb-card-list">
-                                    <li><h3> Auberge Le Panier </h3></li>
-                                    <li> Nuit à partir de 23€ </li>
-                                    <li class="stars">
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star grey-icon"></i>
-                                    </li>
-                                </ul>
-                            </a>
-                            <!--Sixième carte "Hotel chez Amina":-->
-                            <a href="#" class="heb-card-main">
-                                <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hotel chez Amina" class="heb-card-image">
-                                <ul class="heb-card-list">
-                                    <li><h3> Hôtel Chez Amina </h3></li>
-                                    <li> Nuit à partir de 96€ </li>
-                                    <li class="stars">
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star grey-icon"></i>
-                                    </li>
-                                </ul>
-                            </a>
-                        </div>
+                                <li>
+                                    <a href="#" class="heb-card-main">
+                                        <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Canebiere" class="heb-card-image">
+                                        <div class="heb-card-list">
+                                            <h3> Auberge La Canebière </h3>
+                                            <p> Nuit à partir de 25€ </p>
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star blue-icon"></i>
+                                                <i class="fa-solid fa-star blue-icon"></i>
+                                                <i class="fa-solid fa-star blue-icon"></i>
+                                                <i class="fa-solid fa-star blue-icon"></i>
+                                                <i class="fa-solid fa-star grey-icon"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!--Deuxième carte "Hotel du Port":-->
+                                <li>
+                                    <a href="#" class="heb-card-main">
+                                        <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du Port" class="heb-card-image">
+                                        <div class="heb-card-list">
+                                            <h3> Hôtel du Port </h3>
+                                            <p> Nuit à partir de 52€ </p>
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star blue-icon"></i>
+                                                <i class="fa-solid fa-star blue-icon"></i>
+                                                <i class="fa-solid fa-star blue-icon"></i>
+                                                <i class="fa-solid fa-star blue-icon"></i>
+                                                <i class="fa-solid fa-star grey-icon"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!--Troisième carte "Hotel les Mouettes":-->
+                                </li>
+                                    <a href="#" class="heb-card-main">
+                                        <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hotel les mouettes" class="heb-card-image">
+                                        <div class="heb-card-list">
+                                            <h3> Hôtel Les mouettes </h3>
+                                            <p> Nuit à partir de 76€ </p>
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star blue-icon"></i>
+                                                <i class="fa-solid fa-star blue-icon"></i>
+                                                <i class="fa-solid fa-star blue-icon"></i>
+                                                <i class="fa-solid fa-star blue-icon"></i>
+                                                <i class="fa-solid fa-star grey-icon"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!--Quatrième carte "Hotel de la mer":-->
+                                <li>
+                                    <a href="#" class="heb-card-main">
+                                        <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hotel de la mer" class="heb-card-image">
+                                        <div class="heb-card-list">
+                                            <h3> Hôtel de la mer </h3>
+                                            <p> Nuit à partir de 46€ </p>
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star blue-icon"></i>
+                                                <i class="fa-solid fa-star blue-icon"></i>
+                                                <i class="fa-solid fa-star blue-icon"></i>
+                                                <i class="fa-solid fa-star blue-icon"></i>
+                                                <i class="fa-solid fa-star grey-icon"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>    
+                                <!--Cinquième carte "Auberge Le Panier":-->
+                                <li>
+                                    <a href="#" class="heb-card-main">
+                                        <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le Panier" class="heb-card-image">
+                                        <div class="heb-card-list">
+                                            <h3> Auberge Le Panier </h3>
+                                            <p> Nuit à partir de 23€ </p>
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star blue-icon"></i>
+                                                <i class="fa-solid fa-star blue-icon"></i>
+                                                <i class="fa-solid fa-star blue-icon"></i>
+                                                <i class="fa-solid fa-star blue-icon"></i>
+                                                <i class="fa-solid fa-star grey-icon"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>    
+                                <!--Sixième carte "Hotel chez Amina":-->
+                                <li>
+                                    <a href="#" class="heb-card-main">
+                                        <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hotel chez Amina" class="heb-card-image">
+                                        <div class="heb-card-list">
+                                            <h3> Hôtel Chez Amina </h3>
+                                            <p> Nuit à partir de 96€ </p>
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star blue-icon"></i>
+                                                <i class="fa-solid fa-star blue-icon"></i>
+                                                <i class="fa-solid fa-star blue-icon"></i>
+                                                <i class="fa-solid fa-star blue-icon"></i>
+                                                <i class="fa-solid fa-star grey-icon"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>    
                         <a href="#"><p class="afficher-text">Afficher plus</p></a>
                     </article>
                     <article class="populaires-main">
