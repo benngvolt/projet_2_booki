@@ -184,20 +184,23 @@ form {
     font-size: 1.1em;
     line-height: 3;
 }
-.location-text-button {
+
+.search-button {
     width: 132px; 
     font-size: 18px;
     font-weight: 600;
+    background-color: #0065fc;
     text-align: center;
     border: none;
     color: white;
-    background-color: #0065fc;
     border-radius: 0px 15px 15px 0px;
     border: none;
 }
-
-.location-icon-button {
-    visibility: hidden;
+.text-button {
+    display: inline-block;
+}
+.icon-button {
+    display:none;
 }
 
 /* FILTERS (DESKTOP) -------------------------------------------------------------- */
@@ -592,22 +595,17 @@ form {
         height: 100%;
         padding-top: 0;
     }
-    .location-text-button {
+    .search-button {
+        width: 15%; 
+        height: 100%;
+    }
+
+    .text-button {
         display: none;
     }
 
-    .location-icon-button {
+    .icon-button {
         display: inline-block;
-        width: 15%; 
-        height: 100%;
-        font-size: 18px;
-        font-weight: 600;
-        text-align: center;
-        border: none;
-        color: white;
-        background-color: #0065fc;
-        border-radius: 0px 15px 15px 0px;
-        border: none;
     }
     
     /* FILTERS (MOBILE)-------------------------------------------------------------- */
@@ -716,21 +714,15 @@ form {
     }
     .act-card-main {
         width: 100%;
-        aspect-ratio: 1.76/1;
-        height: auto;
-    }
-    .act-card-image {
-        width: 100%;
-        height: 70.5%;
-    }
-    .act-card-main {
-        width: 100%;
         aspect-ratio: 1.75/1;
         height: auto;
     }
     .act-card-image {
         width: 100%;
         height: 70.5%;
+    }
+    .text-box {
+        height: 29.5%;
     }
 
     /* FOOTER (MOBILE) -------------------------------------------------------------- */
