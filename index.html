@@ -14,12 +14,14 @@
             <header>
                 <a href="#"><img src="images/logo/Booki.png" alt="Logo Booki" class="logo"></a>
                 <nav>
-                    <a href="#hebergements" class="nav-accommodations"> Hébergements </a>
-                    <a href="#activites" class="nav-activities" > Activités </a>
+                    <ul class="nav-container">
+                        <li class="nav-box"><a href="#hebergements" class="nav-style"> Hébergements </a></li>
+                        <li class="nav-box"><a href="#activites" class="nav-style"> Activités </a></li>
+                    </ul>
                 </nav>
             </header>
             <main>
-                <!--Section contenant le formulaire et les filtres:-->
+                <!--SECTION contenant le FORMULAIRE et les FILTRES:-->
                 <section>
                     <h1> Trouvez votre hébergement pour des vacances de rêve </h1>
                     <p class="subtitle"> En plein centre-ville ou en pleine nature </p>
@@ -32,18 +34,19 @@
                         <input type="submit" value="&#xf002" class="fa-solid fa-magnifying-glass search-button icon-button">
                     </form>
                     <div class="filters-main">
-                        <p class="filters-title"> Filtres </p>
+                        <h2 class="filters-title"> Filtres </h2>
                         <ul class="filters-container">
-                            <li class="filters-box"> <a href="#"><i class="fa-sharp fa-solid fa-money-bill-wave blue-icon filters-icon"></i> Economique </a></li>
-                            <li class="filters-box"> <a href="#"><i class="fa-solid fa-person blue-icon filters-icon"></i> Familial </a></li>
-                            <li class="filters-box"> <a href="#"><i class="fa-solid fa-heart blue-icon filters-icon"></i> Romantique </a></li>
-                            <li class="filters-box"> <a href="#"><i class="fa-solid fa-dog blue-icon filters-icon"></i> Animaux autorisés </a></li>
+                            <li> <a href="#" class="filters-box"><i class="fa-sharp fa-solid fa-money-bill-wave blue-icon filters-icon"></i> Economique </a></li>
+                            <li> <a href="#" class="filters-box"><i class="fa-solid fa-person blue-icon filters-icon"></i> Familial </a></li>
+                            <li> <a href="#" class="filters-box"><i class="fa-solid fa-heart blue-icon filters-icon"></i> Romantique </a></li>
+                            <li> <a href="#" class="filters-box"><i class="fa-solid fa-dog blue-icon filters-icon"></i> Animaux autorisés </a></li>
                         </ul>
                     </div>
                     <p class="filters-info"><i class="fa-solid fa-info blue-icon filters-icon-border"></i> Plus de 500 logements sont disponibles dans cette ville </p>
                 </section>
-                <!--Section globale hébergements + les plus populaires (flexbox)-->
+                <!--SECTION contenant les HEBERGEMENTS + les PLUS POPULAIRES (flexbox)-->
                 <section id="hebergements" class="section-accomodations">
+                    <!--ARTICLE contenant les HEBERGEMENTS-->
                     <article class="accomodations-main">
                         <h2 class="accomodations-title"> Hébergement à Marseille </h2>
                         <!--Grille des cartes "hébergements"-->
@@ -153,88 +156,111 @@
                                 </li>
                             </ul>
                         </div>    
-                        <a href="#"><p class="display-text">Afficher plus</p></a>
+                        <a href="#" class="display-text">Afficher plus</p></a>
                     </article>
+                    <!--ARTICLE contenant LES PLUS POPULAIRES-->
                     <article class="popular-main">
                         <div class="popular-title-flexbox">
                             <h2 class="popular-title"> Les plus populaires </h2>
                             <i class="fa-solid fa-chart-line pop-icon"></i>
                         </div>
                         <!--Grille des cartes "populaires"-->
-                        <div class="popular-container">
+                        <ul class="popular-container">
                             <!--Première carte "Hotel le Soleil du Matin":-->
-                            <a href="#" class="pop-card-main">
-                                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Le Soleil du Matin" class="pop-card-image">
-                                <ul class="pop-card-list">
-                                    <li><h3> Hotel Le Soleil du Matin </h3></li>
-                                    <li> Nuit à partir de 128€ </li>
-                                    <li class="stars">
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star grey-icon"></i>
-                                    </li>
-                                </ul>
-                            </a>
-                            <!--Deuxième carte "Chambre d'Hôtes Au Coeur de l'Eau":-->
-                            <a href="#" class="pop-card-main">
-                                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au Coeur de l'Eau" class="pop-card-image">
-                                <ul class="pop-card-list">
-                                    <li><h3> Chambres d'hôtes Au Coeur de l'Eau </h3></li>
-                                    <li> Nuit à partir de 71€ </li>
-                                    <li class="stars">
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star grey-icon"></i>
-                                    </li>
-                                </ul>
-                            </a>
+                            <li>
+                                <a href="#" class="pop-card-main">
+                                    <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Le Soleil du Matin" class="pop-card-image">
+                                    <ul class="pop-card-list">
+                                        <li><h3> Hotel Le Soleil du Matin </h3></li>
+                                        <li> Nuit à partir de 128€ </li>
+                                        <li class="stars">
+                                            <i class="fa-solid fa-star blue-icon"></i>
+                                            <i class="fa-solid fa-star blue-icon"></i>
+                                            <i class="fa-solid fa-star blue-icon"></i>
+                                            <i class="fa-solid fa-star blue-icon"></i>
+                                            <i class="fa-solid fa-star grey-icon"></i>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li>  
+                                <!--Deuxième carte "Chambre d'Hôtes Au Coeur de l'Eau":-->
+                                <a href="#" class="pop-card-main">
+                                    <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au Coeur de l'Eau" class="pop-card-image">
+                                    <ul class="pop-card-list">
+                                        <li><h3> Chambres d'hôtes Au Coeur de l'Eau </h3></li>
+                                        <li> Nuit à partir de 71€ </li>
+                                        <li class="stars">
+                                            <i class="fa-solid fa-star blue-icon"></i>
+                                            <i class="fa-solid fa-star blue-icon"></i>
+                                            <i class="fa-solid fa-star blue-icon"></i>
+                                            <i class="fa-solid fa-star blue-icon"></i>
+                                            <i class="fa-solid fa-star grey-icon"></i>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </li>      
                             <!--Troisième carte "Hotel Bleu et Blanc":-->
-                            <a href="#" class="pop-card-main">
-                                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hotel Bleu et Blanc" class="pop-card-image">
-                                <ul class="pop-card-list">
-                                    <li><h3> Hôtel Bleu et Blanc </h3></li>
-                                    <li> Nuit à partir de 68€ </li>
-                                    <li class="stars">
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star blue-icon"></i>
-                                        <i class="fa-solid fa-star grey-icon"></i>
-                                    </li>
-                                </ul>
-                            </a>
-                        </div>
+                            <li>
+                                <a href="#" class="pop-card-main">
+                                    <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hotel Bleu et Blanc" class="pop-card-image">
+                                    <ul class="pop-card-list">
+                                        <li><h3> Hôtel Bleu et Blanc </h3></li>
+                                        <li> Nuit à partir de 68€ </li>
+                                        <li class="stars">
+                                            <i class="fa-solid fa-star blue-icon"></i>
+                                            <i class="fa-solid fa-star blue-icon"></i>
+                                            <i class="fa-solid fa-star blue-icon"></i>
+                                            <i class="fa-solid fa-star blue-icon"></i>
+                                            <i class="fa-solid fa-star grey-icon"></i>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </li>   
+                        </ul>
                     </article>
                 </section>
                 <section id="activities" class="activities-main">
                     <h2> Activités à Marseille </h2>
                     <!--Conteneur des cartes "activités"-->
-                    <div class="activities-container">
+                    <ul class="activities-container">
                         <!--Première carte "Vieux Port":-->
-                        <a href="#" class="act-card-main">
-                            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" class="act-card-image">
-                            <div class="text-box"><h3 class="act-card-title"> Vieux-port </h3></div>
-                        </a>
+                        <li class="act-card-main">
+                            <a href="#">
+                                <figure>
+                                    <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" class="act-card-image">
+                                    <figcaption class="text-box"><h3 class="act-card-title"> Vieux-port </h3></figcaption>
+                                </figure>
+                            </a>
+                        </li>    
                         <!--Deuxième carte "Fort de Pomègues":-->
-                        <a href="#" class="act-card-main">
-                            <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" class="act-card-image">
-                            <div class="text-box"><h3 class="act-card-title"> Fort de Pomègues </h3></div>
-                        </a>
+                        <li class="act-card-main">
+                            <a href="#">
+                                <figure>
+                                    <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" class="act-card-image">
+                                    <figcaption class="text-box"><h3 class="act-card-title"> Fort de Pomègues </h3></figcaption>
+                                </figure>
+                            </a>
+                        </li>
                         <!--Troisième carte "Parc National Calanques":-->
-                        <a href="#" class="act-card-main">
-                            <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques" class="act-card-image">
-                            <div class="text-box"><h3 class="act-card-title"> Parc National des Calanques </h3></div>
-                        </a>
+                        <li class="act-card-main">
+                            <a href="#">
+                                <figure>
+                                    <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques" class="act-card-image">
+                                    <figcaption class="text-box"><h3 class="act-card-title"> Parc National des Calanques </h3></figcaption>
+                                </figure>
+                            </a>
+                        </li>
                         <!--Quatrième carte " N D De la Garde":-->
-                        <a href="#" class="act-card-main">
-                            <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" class="act-card-image">
-                            <div class="text-box"><h3 class="act-card-title"> Notre-Dame de la Garde </h3></div>
-                        </a>
-                    </div>
+                        <li class="act-card-main">
+                            <a href="#">
+                                <figure>
+                                    <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" class="act-card-image">
+                                    <figcaption class="text-box"><h3 class="act-card-title"> Notre-Dame de la Garde </h3></figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
                 </section>
             </main>
             <footer>

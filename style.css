@@ -92,31 +92,29 @@ header {
     margin-bottom : 59px;
     padding-top: 44px;
 }
+
+header nav {
+    width: 100%;
+}
+
 .logo {
     width: 61px;
     height: 19px;
 }
-header nav {
+.nav-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
-.nav-accommodations {
+.nav-style {
     padding: 44px 17px 0 17px;
     margin-right: 16.5px;
-}
-
-.nav-activities {
-    padding: 44px 17px 0 17px;
-    margin-left: 16.5px;
-}
-
-nav a {
     font-weight: 400;
     font-size: 16px;
+    border-top: solid 2px rgba(0, 0, 0, 0);
 }
-nav a:hover {
+.nav-style:hover {
     color: #0065fc;
     border-top: solid 2px #0065fc;
 }
@@ -180,7 +178,6 @@ form {
     background-color: #F2F2F2;
     background-size: cover;
     text-align: center;
-    vertical-align: middle;
     font-size: 1.1em;
     line-height: 3;
 }
@@ -199,7 +196,7 @@ form {
 .text-button {
     display: inline-block;
 }
-.icon-button {
+input.icon-button {
     display:none;
 }
 
@@ -218,7 +215,7 @@ form {
     justify-content: space-between;
     font-size: 16px;
     font-weight: 700;
-    width: 824px;
+    width: 800px;
     height: 50px;
     align-items: center;
 }
@@ -323,12 +320,13 @@ form {
     font-size: 14px;
     line-height: 1.7;
     font-weight: 400;
-    margin-left: 6.5%; 
+    padding-left: 6.5%; 
 }
 .display-text {
+    display: block;
     font-weight: 700;
     font-size: 18px;
-    margin: 4.5% 0 6% 0;
+    padding-top: 4%;
 }
 
 /* POPULAR SECTION (DESKTOP) -----------------------------------------------------------*/
@@ -371,8 +369,9 @@ form {
     align-items: flex-start;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 4px 4px 25px rgba(0,0,0,8%);
+    box-shadow: 4px 4px 25px rgba(0,0,0,8%);   
 }
+
 .pop-card-image {
     width: 39%;
     height: 100%;
@@ -413,7 +412,6 @@ form {
 .act-card-main {
     width: 22.5%;
     height: 100%;
-    display: block;
     background-color: white;
     border-radius: 20px;
     box-shadow: 2px 0px 25px rgba(0,0,0,8%);
@@ -435,6 +433,10 @@ form {
     display: table;
     height: 12.5%;
     width: 100%;
+}
+
+figure {
+    height: 100%;
 }
 
 /* RESPONSIVE --------- 768px <= PAD SCREENS <= 992px -------------- 
@@ -554,23 +556,32 @@ form {
         margin-top : 20px;
         padding-top: 0px;
     }
-    header nav {
+    .nav-box {
+        width: 50%;
+        padding: 48px 0 23px 0;
+    }
+    .nav-container {
         width: 100%;
+        justify-content: space-around;
     }
-    nav a:hover {
-        border-bottom: solid 2px #0065fc;
+    .nav-style {
+        display: inline-block;
+        text-align: center;
+        border-bottom: solid 3px rgba(0,0,0,0%);
         border-top: none;
-    }
-    .nav-accommodations {
-        width: 55%;
-        padding: 48px 0 23px 11%;
+        width: 100%;
+        padding: 0 0 23px 0;
         margin-right: 0;
     }
-    .nav-activities {
-        width: 45%;
-        padding: 48px 0 23px 16%;
-        margin-left: 0;
+    .nav-style:hover {
+        border-bottom: solid 3px #0065fc;
+        border-top: none;
     }
+
+
+
+
+
 
     /* FORM (MOBILE)-------------------------------------------------------------- */
     
@@ -604,7 +615,7 @@ form {
         display: none;
     }
 
-    .icon-button {
+    input.icon-button {
         display: inline-block;
     }
     
@@ -635,7 +646,6 @@ form {
         width: 142px;
         height: 46px;
         text-align: start;
-        padding: 0 0 0 15px;
         line-height: 4.3;
         font-size: 11px;
         font-style: 700;
