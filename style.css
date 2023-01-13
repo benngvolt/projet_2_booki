@@ -106,7 +106,6 @@ header nav {
     flex-direction: row;
     justify-content: flex-end;
 }
-
 .nav-style {
     padding: 44px 17px 0 17px;
     margin-right: 16.5px;
@@ -226,6 +225,7 @@ input.icon-button {
     margin-right: 36px;
 }
 .filters-box {
+    display: inline-block;
     border: solid 2px #D9D9D9;
     border-radius: 25px;
     text-align: center;
@@ -258,7 +258,7 @@ input.icon-button {
 
 .section-accomodations {
     width: 100%;
-    aspect-ratio: 2.15/1;
+    /*aspect-ratio: 2.15/1;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -269,20 +269,18 @@ input.icon-button {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-top: 3%;
 }
 
 /* ACCOMODATION SECTION (DESKTOP) ----------------------------------------------------------*/
 
 .accomodations-main {
     width: 60%;
-    height: 100%;
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 0 3%;
 }
 .accomodations-title {
-    margin: 6.7% 0 3.7% 0;
+    margin: 6% 0 3.7% 0;
 }
 .accomodations-container {
     width: 100%;
@@ -293,18 +291,23 @@ input.icon-button {
     row-gap: 7%;
     column-gap: 3.8%;
 }
-.accom-card-main {
-    width: 100%;
-    aspect-ratio: 1.24/1;
-    display: block;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
+.accom-card-box {
+    max-width: 246px;
+    max-height: 199px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 4px 4px 25px rgba(0,0,0,8%);
 }
+
+.accom-card-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
 .accom-card-image {
     object-fit: cover;
     width: 100%;
@@ -317,26 +320,28 @@ input.icon-button {
 .accom-card-list {
     height: 40%;
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-size: 14px;
-    line-height: 1.7;
     font-weight: 400;
-    padding-left: 6.5%; 
+    padding: 3% 0 5% 6.5%; 
 }
 .display-text {
     display: block;
     font-weight: 700;
     font-size: 18px;
-    padding-top: 4%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 /* POPULAR SECTION (DESKTOP) -----------------------------------------------------------*/
 
 .popular-main {
-    width: 25%;
-    height: 100%;
+    width: 26%;
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 0 3%;
+    padding: 0 2.5%;
 }
 
 .popular-container {
@@ -351,7 +356,7 @@ input.icon-button {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    margin: 16% 0 9% 0;
+    margin: 15% 0 9% 0;
 }
 .popular-title {
     margin: 0;
@@ -361,39 +366,46 @@ input.icon-button {
     font-size: 1.2em;
     text-align: end;
 }
-.pop-card-main {
+.pop-card-box {
     width: 100%;
-    aspect-ratio: 2.38/1;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    height: 144px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 4px 4px 25px rgba(0,0,0,8%);   
 }
+.pop-card-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
 
 .pop-card-image {
-    width: 39%;
-    height: 100%;
+    width: 40%;
+    height: 144px;
     object-fit: cover;
     border-radius: 20px 0px 0px 20px;
     box-sizing: border-box;
     border: 0.3rem solid white;
     border-right: 0rem;
-    margin: 0rem auto;
 }
 .pop-card-list {
-    width: 70%;
+    width: 52%;
     height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     list-style-type: none;
+    line-height: 1.3;
     font-size: 14px;
     font-weight: 400;
-    padding-left: 1rem;
-    padding-right: 0.4rem;
-    margin-top: 5%;
+    padding: 5% 3% 0 0;
+}
+
+h3+p {
+    margin-top: 3%;
 }
 
 /* ACTIVITIES SECTION (DESKTOP) -------------------------------------*/
@@ -452,7 +464,7 @@ figure {
     .wrapper {
         max-width: 992px;
         min-width: 768px;
-        padding: 0 7.2%;
+        padding: 0 6%;
     }
     
     /* GLOBAL (PAD)-------------------------------------------------------------- */
@@ -474,7 +486,7 @@ figure {
     /* ------------------------ACCOMODATIONS AND POPULAR SECTIONS (PAD) -------------------------------------------------------------- */
     
     .section-accomodations {
-        aspect-ratio: 1/1.09;
+        /*aspect-ratio: 1/1.09;*/
         flex-direction: column;
         margin-bottom: 7.6%;
     }
@@ -485,14 +497,15 @@ figure {
         width: 91%;
         height: 65.4%;
         padding: 0 4.5%;
+        margin-bottom: 5%;
     }
 
     /* POPULAR SECTION (PAD) -------------------------------------------------------------- */
 
     .popular-main {
-        width: 91%;
+        width: 92%;
         height: 29%;
-        padding: 0 4.5%;
+        padding: 0 4%;
     }
     .popular-title-flexbox {
         margin: 4.5% 0 4% 0;
@@ -500,10 +513,10 @@ figure {
     .popular-container {
         height: auto;
         flex-direction: row;
+        margin-bottom: 5%;
     }
-    .pop-card-main {
-        width: 31.4%;
-        aspect-ratio: 1.75/1;
+    .pop-card-box {
+        width: 252px;
     }
     .pop-card-list {
         font-size: 13px;
@@ -527,13 +540,13 @@ figure {
 
 }
 
-/* RESPONSIVE --------- 340px <= MOBILE SCREENS <= 768px -------------- 
+/* RESPONSIVE --------- MOBILE SCREENS <= 768px -------------- 
 ++++++++++++++
 ++++++++++++++
 ++++++++++++++
 */
 
-@media only screen and (min-width: 340px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     
     /* BODY (MOBILE)-------------------------------------------------------------- */
 
@@ -578,11 +591,6 @@ figure {
         border-top: none;
     }
 
-
-
-
-
-
     /* FORM (MOBILE)-------------------------------------------------------------- */
     
     section h1 {
@@ -590,9 +598,8 @@ figure {
         margin-bottom: 13px;
     }
     form {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 6.7/1;
+        width: 332px;
+        height: 49px;
     }
     .subtitle {
         margin-bottom: 36px;
@@ -643,12 +650,13 @@ figure {
         column-gap: 4.2%;
     }
     .filters-box {
-        width: 142px;
+        width: 90%;
         height: 46px;
         text-align: start;
         line-height: 4.3;
         font-size: 11px;
         font-style: 700;
+        padding: 0 0 0 10%;
     }
     .filters-icon {
         margin-right: 9px;
@@ -661,7 +669,7 @@ figure {
 
     .section-accomodations {
         flex-direction: column-reverse;
-        margin-bottom: 105px;
+        margin-bottom: 80px;
     }
 
     /* ACCOMODATIONS SECTION (MOBILE)-------------------------------------------------------------- */
@@ -669,19 +677,23 @@ figure {
     .accomodations-container {
         display: flex;
         flex-direction: column;
+        aspect-ratio: auto;
     }
     .accomodations-main {
         width: 100%;
-        height: auto;
         background-color: white;
-        border-radius: 0px;
-        padding: 0px;
+        padding: 0;
     }
     .accomodations-title {
         margin: 26px 0 19px 0;
     }
-    .accom-card-main {
-        aspect-ratio: 1.68/1;
+    .accom-card-box {
+        max-width: none;
+        max-height: none;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1.7/1;
+        margin-bottom: 3%;
     }
     .accom-card-list {
         height: 38%;
@@ -705,19 +717,24 @@ figure {
     }
     .popular-container {
         width: 100%;
-        aspect-ratio:1/1.35;
-        height: auto;
+        height: 454px;
         padding-bottom: 47px;
+    }
+    .pop-card-box {
+        width: 100%;
+        height: 144px;
     }
     .popular-title-flexbox {
         margin: 28px 0 26px 0;
+    }
+    .pop-card-list{
+        padding: 16px 3% 12px 15px;
     }
 
     /* ACTIVITIES SECTION (MOBILE)-------------------------------------------------------------- */
 
     .activities-container {
         width: 100%;
-        aspect-ratio: 1/2.49;
         flex-direction: column;
         height: auto;
         margin: 2px 0 80px 0;
@@ -726,6 +743,7 @@ figure {
         width: 100%;
         aspect-ratio: 1.75/1;
         height: auto;
+        margin-bottom: 5%;
     }
     .act-card-image {
         width: 100%;
