@@ -748,6 +748,7 @@ figure {
     }
     .accom-card-image {
         height: auto;
+        max-height: 393px;
         min-height: 124px;
     }
     .display-text{
