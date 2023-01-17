@@ -47,6 +47,14 @@ table {
 	border-spacing: 0;
 }
 
+/* MAIN VERSION ---------992px <= DESKTOP <= 1400px -------------- 
+++++++++++++++
+++++++++++++++
+++++++++++++++
+*/
+
+
+
 /* BODY (DESKTOP) -------------------------------------------------------------- */
 
 .wrapper {
@@ -128,7 +136,6 @@ footer {
     background-color: #F2F2F2;
     height: 225px;
     margin: 60px 2.5% 0 2.5%;
-    /*padding: 0 2.5%;*/
 }
 footer nav {
     height: auto;
@@ -244,6 +251,8 @@ input.icon-button {
 .filters-icon {
     margin-right: 10px;
     font-size: 1.4em;
+    position: relative;
+    top: 2px;
 }
 .filters-icon-border {
     padding: 4px 8px 5px 8px;
@@ -269,9 +278,10 @@ input.icon-button {
 }
 .stars {
     font-size: 0.8em;
+    width: 66px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding-top: 2%;
 }
 
@@ -462,7 +472,7 @@ figure {
 ++++++++++++++
 */
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 769px) and (max-width: 992px) {
 
     /* BODY (PAD)-------------------------------------------------------------- */  
     
@@ -472,16 +482,13 @@ figure {
     }
     
     /* GLOBAL (PAD)-------------------------------------------------------------- */
-    
-    /*h3 {
-        font-size: 14px;
-    }*/
 
     .sections-wrapper {
         padding: 0 6%;
     }
 
     /* HEADER (PAD)----------------------------------(blank)--------------------- */
+   
     header {
          padding: 44px 6% 0 6%;
     }
@@ -498,6 +505,7 @@ figure {
         padding-top: 3%;
     }
     /* FILTERS (PAD)-------------------------------------------------------------- */
+   
     .filters-title {
         margin-right: 2%;
     }
@@ -563,7 +571,6 @@ figure {
         height: 21%;
         line-height:1;
     }
-
 }
 
 /* RESPONSIVE --------- MOBILE SCREENS <= 768px -------------- 
@@ -741,7 +748,6 @@ figure {
     
     .popular-main {
         width: 90%;
-        height: auto;
         background-color: #F2F2F2;
         border-radius: 0px;
         padding: 0 5%
