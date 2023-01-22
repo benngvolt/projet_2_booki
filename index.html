@@ -26,7 +26,7 @@
                 <section class="sections-wrapper">
                     <h1> Trouvez votre hébergement pour des vacances de rêve </h1>
                     <p class="subtitle"> En plein centre-ville ou en pleine nature </p>
-                    <form method="get" action="">
+                    <form method="get" action="#">
                         <label for="mainlocation" class="location-label">
                             <i class="fa-sharp fa-solid fa-location-dot location-icon"></i>
                         </label>
@@ -46,7 +46,7 @@
                     <p class="filters-info"><i class="fa-solid fa-info blue-icon filters-icon-border"></i> Plus de 500 logements sont disponibles dans cette ville </p>
                 </section>
                 <!--SECTION contenant les HEBERGEMENTS + les PLUS POPULAIRES (flexbox)-->
-                <section id="accomodations" class="section-accomodations sections-wrapper">
+                <div id="accomodations" class="section-accomodations sections-wrapper">
                     <!--ARTICLE contenant les HEBERGEMENTS-->
                     <article class="accomodations-main">
                         <h2 class="accomodations-title"> Hébergements à Marseille </h2>
@@ -160,7 +160,7 @@
                         <a href="#" class="display-text">Afficher plus</a>
                     </article>
                     <!--ARTICLE contenant LES PLUS POPULAIRES-->
-                    <article class="popular-main">
+                    <aside class="popular-main">
                         <div class="popular-title-flexbox">
                             <h2 class="popular-title"> Les plus populaires </h2>
                             <i class="fa-solid fa-chart-line pop-icon"></i>
@@ -190,7 +190,7 @@
                                 <a href="#" class="pop-card-main">
                                     <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au Coeur de l'Eau" class="pop-card-image">
                                     <ul class="pop-card-list">
-                                        <li><h3> Chambres d'hôtes Au Coeur de l'Eau </h3>
+                                        <li><h3> Chambres d'hôtes Au coeur de l'Eau </h3>
                                             <p> Nuit à partir de 71€ </p>
                                         </li>
                                         <li class="stars">
@@ -222,8 +222,8 @@
                                 </a>
                             </li>   
                         </ul>
-                    </article>
-                </section> 
+                    </aside>
+                </div> 
                 <section id="activities" class="sections-wrapper activities-main">
                     <h2 class="half-paragraph"> Activités à Marseille </h2>
                     <!--Conteneur des cartes "activités"-->
@@ -233,7 +233,7 @@
                             <a href="#">
                                 <figure>
                                     <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" class="act-card-image">
-                                    <figcaption class="text-box"><h3 class="act-card-title"> Vieux-port </h3></figcaption>
+                                    <figcaption class="text-box"><h3 class="act-card-title"> Vieux-Port </h3></figcaption>
                                 </figure>
                             </a>
                         </li>    
@@ -251,7 +251,7 @@
                             <a href="#">
                                 <figure>
                                     <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques" class="act-card-image">
-                                    <figcaption class="text-box"><h3 class="act-card-title"> Parc National des Calanques </h3></figcaption>
+                                    <figcaption class="text-box"><h3 class="act-card-title"> Parc national des Calanques </h3></figcaption>
                                 </figure>
                             </a>
                         </li>
@@ -260,7 +260,7 @@
                             <a href="#">
                                 <figure>
                                     <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" class="act-card-image">
-                                    <figcaption class="text-box"><h3 class="act-card-title"> Notre-Dame de la Garde </h3></figcaption>
+                                    <figcaption class="text-box"><h3 class="act-card-title"> Notre-Dame-de-la-Garde </h3></figcaption>
                                 </figure>
                             </a>
                         </li>
@@ -270,20 +270,20 @@
             <footer>
                 <nav>
                     <ul class="footer-list">
-                        <li class="footer-title"><h3>À propos</h3></li>
-                        <li>Fonctionnement du site</li>
-                        <li>Conditions générales</li>
-                        <li>Données et confidentialité</li>
+                        <li class="footer-title"><h3 class="footer-title-fontsize">À propos</h3></li>
+                        <li><a href="#">Fonctionnement du site</a></li>
+                        <li><a href="#">Conditions générales</a></li>
+                        <li><a href="#">Données et confidentialité</a></li>
                     </ul>
                     <ul class="footer-list">
-                        <li class="footer-title"><h3>Nos hébergements</h3></li>
-                        <li>Charte qualité</li>
-                        <li>Proposer votre hôtel</li>
+                        <li class="footer-title"><h3 class="footer-title-fontsize">Nos hébergements</h3></li>
+                        <li><a href="#">Charte qualité</a></li>
+                        <li><a href="#">Proposer votre hôtel</a></li>
                     </ul>
                     <ul class="footer-list">
-                        <li class="footer-title"><h3>Assistance</h3></li>
-                        <li>Centre d'aide</li>
-                        <li>Nous contacter</li>
+                        <li class="footer-title"><h3 class="footer-title-fontsize">Assistance</h3></li>
+                        <li><a href="#">Centre d'aide</a></li>
+                        <li><a href="#">Nous contacter</a></li>
                     </ul>
                 </nav>
             </footer>
