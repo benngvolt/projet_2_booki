@@ -204,12 +204,13 @@ form {
     border-radius: 0px 15px 15px 0px;
     border: none;
 }
-.text-button {
+.search-button span {
     display: inline-block;
 }
-input.icon-button {
+.search-button i {
     display:none;
 }
+
 
 /* FILTERS (DESKTOP) -------------------------------------------------------------- */
 
@@ -559,6 +560,12 @@ figure {
     .filters-info {
         padding-left: 0;
     }
+    .filters-box {
+        font-size: 1.6vw;
+    }
+    .filters-icon {
+        font-size: 2.2vw;
+    }
 
     /* ------------------------ACCOMODATIONS AND POPULAR SECTIONS (PAD) -------------------------------------------------------------- */
     
@@ -721,12 +728,10 @@ figure {
         min-width: 50px; 
         height: 100%;
     }
-
-    .text-button {
-        display: none;
+    .search-button span {
+        display:none;
     }
-
-    input.icon-button {
+    .search-button i {
         display: inline-block;
     }
     
@@ -808,7 +813,6 @@ figure {
         max-height: none;
         width: 100%;
         height: auto;
-        aspect-ratio: 1.68/1;
         margin-bottom: 9px;
     }
     .accom-card-list {
@@ -859,13 +863,13 @@ figure {
 
     .activities-container {
         width: 100%;
+        aspect-ratio: none;
         flex-direction: column;
         height: auto;
         margin: 2px 0 60px 0;
     }
     .act-card-main {
         width: 100%;
-        aspect-ratio: 1.75/1;
         height: auto;
         margin-bottom: 24px;
     }
@@ -873,12 +877,9 @@ figure {
         width: 100%;
         aspect-ratio: 2.49/1;
         height: auto;
-        /*height: 70.5%;
-        max-height: 276px;
-        min-height: 134px;*/
     }
-    .text-box {
-        height: 29.5%;
+    .act-card-title {
+        height: 56px;
     }
 
     /* FOOTER (MOBILE) -------------------------------------------------------------- */
