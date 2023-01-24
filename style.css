@@ -819,8 +819,6 @@ figure {
     .accom-card-image {
         aspect-ratio: 2.7/1;
         height: auto;
-        /*max-height: 393px;
-        min-height: 124px;*/
     }
     .display-text{
         display: none;
