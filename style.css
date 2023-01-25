@@ -770,8 +770,9 @@ figure {
         padding: 0 0 0 13px;
     }
     .filters-icon {
-        margin-right: 4px;
+        margin-right: 0;
         font-size: 1.7em;
+        width: 18%;
     }
     .filters-icon-border {
         padding: 3px 8px;
@@ -863,8 +864,8 @@ figure {
 
     .activities-container {
         width: 100%;
-        aspect-ratio: none;
         flex-direction: column;
+        aspect-ratio: inherit;
         height: auto;
         margin: 2px 0 60px 0;
     }
